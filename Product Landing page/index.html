@@ -1,28 +1,45 @@
-
-
 <!DOCTYPE html>
+
+<html lang="en">
+
 <head>
 
+    <meta charset="utf-8">
+
     <title>Product Landing Page</title>
+    <meta name="description" content="Random Landing Pagee">
+    <meta name="author" content="me">
 
     <style>
 
+        :root{
+        --color1: #05668dff;
+        --color2: #028090ff;
+        --color3: #00a896ff;
+        --color4: #02c39aff;
+        --color5: #f0f3bdff;
+    }
+
+        body{
+            background-color: var(--color3);
+        }
+
         #nav-bar {
-            background-color: darkgray;
+            background-color: var(--color1);
             display: flex;
             flex-direction: row;
             height: auto;
         }
 
         #nav-left {
-            background-color: lightblue;
+            background-color: var(--color3);
             display: flex;
             flex-direction: row;
             width: 60%;
         }
 
         #nav-right {
-            background-color: lightblue;
+            background-color: var(--color3);
             display: flex;
             flex-direction: row;
             padding: 0;
@@ -53,7 +70,6 @@
             padding: 5px;
         }
 
-
         .nav-link {
             font-size: large;
             font-weight: bold;
@@ -61,15 +77,17 @@
         }
 
         #form {
-            background-color: lightslategray;
+            background-color: var(--color2);
+            margin-top: 5px;
             margin-left: auto;
             margin-right: auto;      
             padding: 10px;
+            text-align: center;
         }
 
         #video-div {
-            background-color: maroon;
-            margin-top:20px;
+            background-color: var(--color4);
+            margin-top:5px;
             display: flex;
         }
 
@@ -80,9 +98,32 @@
             width: 320px;
             height: 240px;
         }
+
+        article {
+            background-color: var(--color3);
+            display: flex;
+            text-align: justify;
+        }
+
+        article section {
+            background-color: var(--color4);
+            padding: 15px;
+            margin-top: 5px;
+            margin-left:auto;
+            margin-right:auto;
+            width: 50%;
+        }
+
+        article h2 {
+            text-align: center;
+        }
+
+        footer {
+
+        }
         
-        @media (min-width: 700px;){
-            #form{
+        @media (max-width: 550px){
+            #nav-right {
                 background-color: black;
             }
         }
@@ -133,17 +174,22 @@
 
     </section>
 
-    <section id="products">
+    <article>
+        <section id="products">
 
-        <h2>PRODUCTS SUBSECTION</h2>
+            <h2>PRODUCTS SUBSECTION</h2>
 
-    </section>
+            <p>Felis eget nunc lobortis mattis. Vestibulum lorem sed risus ultricies tristique nulla aliquet enim tortor. Varius quam quisque id diam vel quam elementum pulvinar. Scelerisque fermentum dui faucibus in. Nec ullamcorper sit amet risus nullam eget felis eget nunc. Dui id ornare arcu odio ut sem. Venenatis tellus in metus vulputate eu scelerisque felis. Volutpat ac tincidunt vitae semper quis lectus. Ut porttitor leo a diam sollicitudin. Adipiscing elit ut aliquam purus. Sapien pellentesque habitant morbi tristique senectus et. Scelerisque fermentum dui faucibus in ornare quam viverra. Ullamcorper malesuada proin libero nunc consequat interdum varius sit. Egestas integer eget aliquet nibh praesent tristique. Quis vel eros donec ac.</p>
+        </section>
 
-    <section id="prices">
+        <section id="prices">
 
-        <h2>PRICES</h2>
+            <h2>PRICES</h2>
 
-    </section>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Penatibus et magnis dis parturient montes nascetur ridiculus. Gravida in fermentum et sollicitudin. Consectetur purus ut faucibus pulvinar elementum integer enim neque volutpat. Scelerisque eu ultrices vitae auctor eu. Mauris a diam maecenas sed enim ut sem viverra aliquet. Nulla at volutpat diam ut venenatis tellus in. Aliquet nec ullamcorper sit amet risus nullam. Imperdiet dui accumsan sit amet nulla facilisi. Id ornare arcu odio ut sem nulla pharetra diam. Amet venenatis urna cursus eget nunc. Vel turpis nunc eget lorem dolor sed viverra ipsum nunc. Sed faucibus turpis in eu mi bibendum neque egestas congue. Quam id leo in vitae turpis massa sed. Ullamcorper eget nulla facilisi etiam dignissim diam quis enim. Faucibus pulvinar elementum integer enim. Odio ut sem nulla pharetra diam sit. Erat velit scelerisque in dictum non. Cursus vitae congue mauris rhoncus aenean vel elit. Diam sit amet nisl suscipit adipiscing bibendum est ultricies integer.</p>
+        </section>
+
+    </article>
 
     <footer>this is the footer</footer>
 
