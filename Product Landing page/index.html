@@ -1,0 +1,152 @@
+
+
+<!DOCTYPE html>
+<head>
+
+    <title>Product Landing Page</title>
+
+    <style>
+
+        #nav-bar {
+            background-color: darkgray;
+            display: flex;
+            flex-direction: row;
+            height: auto;
+        }
+
+        #nav-left {
+            background-color: lightblue;
+            display: flex;
+            flex-direction: row;
+            width: 60%;
+        }
+
+        #nav-right {
+            background-color: lightblue;
+            display: flex;
+            flex-direction: row;
+            padding: 0;
+            width: 40%;
+        }
+
+        img{
+            border-radius: 40%;
+            padding: 10px;
+            width: 60px;
+        }
+
+        ul {
+            align-items: left;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-left: auto;
+            margin-right: auto;      
+            padding: 5px;
+        }
+
+        li {
+            display: flex;
+            flex-direction: row;
+            margin-left: auto;
+            margin-right: auto;      
+            padding: 5px;
+        }
+
+
+        .nav-link {
+            font-size: large;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        #form {
+            background-color: lightslategray;
+            margin-left: auto;
+            margin-right: auto;      
+            padding: 10px;
+        }
+
+        #video-div {
+            background-color: maroon;
+            margin-top:20px;
+            display: flex;
+        }
+
+        #video {
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            width: 320px;
+            height: 240px;
+        }
+        
+        @media (min-width: 700px;){
+            #form{
+                background-color: black;
+            }
+        }
+
+    </style>
+
+    
+</head>
+
+<body>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    <header  id="header">
+
+    <nav id="nav-bar">
+        
+        <div id="nav-left">
+            <img id="header-img" src="https://www.brandcrowd.com/gallery/brands/pictures/picture15625263484021.jpg" alt="product logo">
+            
+            <h1 id="title">Product Name</h1>
+
+        </div>
+
+        <div id="nav-right">
+            <ul>
+
+                <li><a class="nav-link" href="#products">Products</a></li>
+                <li><a class="nav-link" href="#video-div">Video</a></li>
+                <li><a class="nav-link" href="#prices">Contacts</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    </header>
+   
+    <form action="/email-form" id="form" action="https://www.freecodecamp.com/email-submit">
+    
+        <h2 id="subscribe">Subscribe here</h2>
+        <input type="email" id="email" name='email' placeholder="Type your email here">
+        <input type="submit" id="submit" action="https://www.freecodecamp.com/email-submit">
+    </form>
+
+
+    <section id="video-div">
+
+        <iframe id="video" src="https://www.youtube.com/embed/pQN-pnXPaVg" controls>HTML full course  freecodeacademy</iframe>
+
+    </section>
+
+    <section id="products">
+
+        <h2>PRODUCTS SUBSECTION</h2>
+
+    </section>
+
+    <section id="prices">
+
+        <h2>PRICES</h2>
+
+    </section>
+
+    <footer>this is the footer</footer>
+
+</body>
+
+</html>

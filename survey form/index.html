@@ -1,0 +1,96 @@
+
+
+<!DOCTYPE html>
+    <header>
+
+        <title>Survey Form</title>
+
+        <style>
+
+            body {
+                background-color: lightblue;
+                color: darkblue;
+                
+            }
+
+            #header {
+                background-color: darkblue;
+                color: white;
+                text-align: center;
+            }
+
+            label {
+                font-weight: bold;
+            }
+
+            form {
+                
+                margin-left: auto;
+                margin-right: auto;
+                padding-left: 30%;
+                padding-right: 30%;
+                text-align: center;
+            }
+
+        </style>
+
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    </header>
+
+    <body>
+
+        <div id="header">
+        <H1 id="title">INSERT YOUR TITLE HERE</H1>
+        <p id="description">A survey try by Gustavo</p>
+        </div>
+
+        <form action="/submit-form-survey" id="survey-form">
+
+            <label id="name-label">NAME: </label><br>
+            <input type="text" id="name" placeholder="Enter your name" required><br><br>
+
+            <label id="email-label">EMAIL:</label><br>
+            <input type="email" id="email" placeholder="Enter your email" required><br><br>
+
+            <label id="number-label">AGE:</label><br>
+            <input type="number" id="number" placeholder="Age" min="1" max="2"><br><br>
+
+            <Label>Describe your role</Label><br>
+            
+            <select id="dropdown">
+                <option value="" selected disabled hidden>Choose here</option>
+                <option value="student">Student</option>
+                <option value="full-job">Full time job</option>
+                <option value="full-learning">Full time learner</option>
+                <option value="other">Other</option>
+
+            </select><br><br>
+
+            <div id="recomment-block">
+                <h3>Would you recommend?</h3>
+                <label for="definitely"><input id="definitely" value="definitely" type="radio" name="recommend">Definitely</label><br>
+                <label for="maybe"><input id="maybe" value="maybe" type="radio" name="recommend">Maybe</label><br>
+                <label for="not-sure"><input id="not-sure" value="not-sure" type="radio" name="recommend">Not Sure</label><br><br>
+
+            </div>
+
+
+            <div id="improvement-block">
+                <h3 id="improve-label">What would you like to see improved?</h3>
+                <label for="front-end"><input id="front-end" value="front-end" type="checkbox" name="improvements">Front-end Projects</label><br>
+                <label for="back-end"><input id="back-end" value="back-end" type="checkbox" name="improvements">Back-end Projects</label><br>
+                <label for="data"><input id="data" value="data" type="checkbox" name="improvements">Data Visualization</label><br><br>
+            </div>
+
+            <h3 id="add-comments-label">Additional comments</h3>
+            <textarea id="add-comments" rows="6" cols="60" placeholder="Add comments here"></textarea><br><br>
+
+            <button id='submit'>Submit</button>
+
+
+        </form>
+
+    </body>
+
+</html>
