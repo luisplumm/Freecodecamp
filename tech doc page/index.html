@@ -22,16 +22,53 @@
 
         #main-div{
             display: flex;
-            margin: auto;
+            margin-left: 15%;
+            margin-right: auto;
+            
         }
 
         #navbar {
-            background-color: lightpink;
+            background-color: lightsteelblue;
             display: flex;
             flex-direction: column;
+            height: 100%;
             margin-left: auto;
             margin-right: auto;
+            left: 0;
+            position: fixed;
+            top: 0;
             width: 25%;
+            z-index: 1;
+        }
+
+        #header{
+            text-align: center;
+        }
+
+        .nav-link {
+            background-color: white;
+            border-style:solid;
+            border-color: black;
+            border-width: 1px;
+            font-weight: bolder;
+            margin: 1px;
+            padding: 5px;
+            text-align: center;
+        }
+
+        a:link {
+            background-color: lightskyblue;
+            color: black;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: lightgray;
+        }
+
+        a:hover {
+            background-color: mediumturquoise;
+            color: white;
         }
 
         #main-doc {
@@ -46,17 +83,16 @@
             text-align: justify;
         }
 
-        .main-section  header{
-            display: flex;
+        .main-section header{
             background-color: lightslategray;
+            display: flex;
+            font-weight: bold;
+            font-size: larger;
             margin-left: 5px;
             text-transform: capitalize;
-            font-weight: bold;
-            
-            
         }
 
-        @media (max-width: 150px){
+        @media (max-width: 750px){
             #navbar {
                 background-color: lightgreen;
                 display: flex;
@@ -77,8 +113,9 @@
 
     <nav id="navbar">
     
-        <header  id="header">Random Technical documentation</header>
+        <header  id="header"><h1>Random Technical documentation</h1></header>
 
+        <a class="nav-link" href="#introduction" >INTRODUCTION</a>
         <a class="nav-link" href="#section_1" >SECTION 1</a>
         <a class="nav-link" href="#section_2" >SECTION 2</a>
         <a class="nav-link" href="#section_3" >SECTION 3</a>
@@ -89,6 +126,13 @@
     </nav>
 
     <main id="main-doc">
+        <section class="main-section" id="introduction">
+            <HEADER>INTRODUCTION</HEADER>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Eget felis eget nunc lobortis mattis aliquam faucibus purus in. Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Euismod lacinia at quis risus sed. Leo urna molestie at elementum eu. Neque gravida in fermentum et sollicitudin. Ultricies integer quis auctor elit sed vulputate mi. Duis ultricies lacus sed turpis tincidunt id aliquet risus. Turpis massa sed elementum tempus. Tristique senectus et netus et malesuada fames ac turpis. Nunc lobortis mattis aliquam faucibus purus in. Tincidunt eget nullam non nisi est sit amet. Eu facilisis sed odio morbi quis commodo odio aenean. Eget magna fermentum iaculis eu non. Nulla porttitor massa id neque aliquam vestibulum morbi. Bibendum ut tristique et egestas quis ipsum suspendisse ultrices. Id donec ultrices tincidunt arcu. Quam viverra orci sagittis eu volutpat odio facilisis. Ultrices eros in cursus turpis massa tincidunt dui. </p>
+
+        </section>
+
+
         <section class="main-section" id="section_1">
             <HEADER>SECTION 1</HEADER>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Eget felis eget nunc lobortis mattis aliquam faucibus purus in. Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Euismod lacinia at quis risus sed. Leo urna molestie at elementum eu. Neque gravida in fermentum et sollicitudin. Ultricies integer quis auctor elit sed vulputate mi. Duis ultricies lacus sed turpis tincidunt id aliquet risus. Turpis massa sed elementum tempus. Tristique senectus et netus et malesuada fames ac turpis. Nunc lobortis mattis aliquam faucibus purus in. Tincidunt eget nullam non nisi est sit amet. Eu facilisis sed odio morbi quis commodo odio aenean. Eget magna fermentum iaculis eu non. Nulla porttitor massa id neque aliquam vestibulum morbi. Bibendum ut tristique et egestas quis ipsum suspendisse ultrices. Id donec ultrices tincidunt arcu. Quam viverra orci sagittis eu volutpat odio facilisis. Ultrices eros in cursus turpis massa tincidunt dui. </p>
