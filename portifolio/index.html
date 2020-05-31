@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>My portofolio</title>
+    <meta name="description" content="MY PORTIFOLIO">
+    <meta name="author" content="GUSTAVO">
+
+    <style>
+
+        * {
+            border: 0;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 500;
+            font-size: 20px;
+            padding: 0;
+            text-decoration: none;
+            color: black;
+        }
+        
+        :root{
+            --color1: hsla(189, 76%, 70%, 1);
+            --color2: hsla(0, 0%, 100%, 1);
+            --color3: hsla(212, 97%, 54%, 1);
+            --color4: hsla(212, 24%, 21%, 1);
+            --color5: hsla(176, 62%, 80%, 1);
+        }
+
+        body {
+            background-color: var(--color4);
+        }
+
+        header {
+            display: flex;
+            padding: 0px 15px;
+            width: 100%;
+            
+        }
+
+        #navbar {
+            background-color: var(--color3);
+            display: flex;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1;
+        }
+
+        #nav-list{
+            list-style: none;
+           
+        }
+                
+        .nav-item{
+            display: inline-block;
+            color: var(--color1);
+            padding: 0px 20px;
+        }
+
+        .nav-item a{
+            border-radius: 30px;
+            padding: 15px 10px;
+            transition: all 0.4s ease 0;
+            
+        }
+
+        .nav-item a:hover{
+            background-color: var(--color4);
+            color: var(--color2);
+        }
+
+        #welcome-section {
+            background-color: var(--color4);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #welcome-section h1{
+            font-family: 'Courier New', Courier, monospace;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 60px;
+        }
+
+
+        #who  {
+            background-color: var(--color3);
+            display: flex;
+            padding: 5px;
+        }
+
+        #who h2, h3{
+            display: flex;
+            flex-direction: column;
+            font-size: 30px;
+            font-weight: 600;
+            justify-content: center;
+            align-items: center;
+            padding-left: 15px;
+        }
+
+        #who a{
+            display: inline-block;
+            color: var(--color5);
+            border-radius: 30px;
+            padding: 15px 10px;
+            transition: all 0.4s ease 0;        
+            height: 20px;
+        }
+
+        #who a:hover{
+            background-color: var(--color4);
+            color: var(--color2);
+        }
+
+        #projects{
+            background-color: var(--color3);
+        }
+
+        #projects h2{
+            display: flex;
+            flex-direction: column;
+            font-size: 30px;
+            font-weight: 600;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+        }
+
+
+        #projects a{
+            display: inline-block;
+            color: var(--color5);
+            border-radius: 30px;
+            font-weight: 600;
+            padding: 15px 10px;
+            transition: all 0.4s ease 0;        
+            height: 20px;
+        }
+
+        #projects a:hover{
+            background-color: var(--color4);
+            color: var(--color2);
+        }
+
+        footer {
+            display: flex;
+            flex-direction: column;
+            font-size: 30px;
+            font-weight: 600;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+        }
+
+
+        @media (max-width: 800px){
+            * {
+                background-color: pink;
+            }
+        }
+
+    </style>
+
+    
+</head>
+
+<body>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    <header id="header">
+        
+        <nav id="navbar" class="nav"> 
+
+            <ul id="nav-list">
+                <li class="nav-item"><a href="#welcome-section">HOME</a></li>
+                <li class="nav-item"><a href="#who">WHO AM I?</a></li>
+                <li class="nav-item"><a href="#projects">PROJECTS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="welcome-section">
+        <h1>Gustavo's Portifolio</h1>
+    </section>
+
+    
+
+
+    <section id="who">
+        <section id="image">
+            <img src="https://scontent.fgig14-1.fna.fbcdn.net/v/t1.0-9/31131266_1905619689508140_8348716618632658944_o.jpg?_nc_cat=106&_nc_sid=174925&_nc_ohc=rEL83Y6-eCcAX9hAZ_v&_nc_ht=scontent.fgig14-1.fna&oh=080b9239dd01e957165d071216f7deb5&oe=5EF809AB" alt="mypicture" width=500px;>
+        
+        </section>
+            
+        <section>
+            <h2>Hi, Welcome to my page!</h2>
+
+            <h3>I'm a Technical Product Manager with nearly 10 years of experience in the Aviation industry and its systematic processes with high quality standards.At some point I became a product manager and since then I decided that if I am to understand and work with my team properly I better get to understand how to code. At least the basics. But I'm sure ain't gonna stop on that. let's how far I can get.</h3>
+        </section>
+            
+        
+        
+        <a class="profile-link" href="https://github.com/luisplumm" target="_blank">GITHUB</a>
+        <a class="profile-link" href="https://github.com/luisplumm" target="_blank">LINKEDIN</a>
+    </section>
+
+    <section id="projects">
+
+        <h2>Here follows some of the projects I currently was able to finish:</h2>
+
+        <ul id="projects-ul">
+            <li class="project-tile"><a href="https://codepen.io/luisplumm/full/BaowLyZ" target="_blank">PROJECT #1 - Tribute page</a></li>
+            <li class="project-tile"><a href="https://codepen.io/luisplumm/full/yLYPvxy" target="_blank">PROJECT #2 - Survey page</a></li>
+            <li class="project-tile"><a href="https://codepen.io/luisplumm/full/XWmEPWp" target="_blank">PROJECT #3 - Landing Page</a></li>
+            <li class="project-tile"><a href="https://codepen.io/luisplumm/full/dyYjXwX" target="_blank">PROJECT #4 - Tech Doc page</a></li>
+        </ul>
+
+    </section>
+
+    <footer>JUST KICK IT</footer>
+
+</body>
+
+</html>
